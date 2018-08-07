@@ -4,6 +4,10 @@
 
 [cheatsheet](https://github.com/wsargent/docker-cheat-sheet)
   
+### attach and detach from running contatiner
+docker excec -it 26fe6d658472 /bin/bash
+cntrl + p + q # detach
+  
 ### You _can_ copy files from host to container:
 docker cp knwr_F_spades.fa.gz 30face09e8f8:/home/linuxbrew/tigmint/spades
 ### but probably always preferable to just mount your host folder to /mnt with -v:
