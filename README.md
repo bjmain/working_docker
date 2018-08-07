@@ -14,16 +14,7 @@ sudo apt-get update
 #install vi
 sudo apt-get install vim
 
-### get linuxbrew
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-
-test -d home/linuxbrew/.linuxbrew && PATH="$HOME/.linuxbrew/bin:$HOME/.linuxbrew/sbin:$PATH"
-
-test -d /home/linuxbrew/.linuxbrew && PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH"
-
-test -r /home/linuxbrew/.bash_profile && echo "export PATH='$(brew --prefix)/bin:$(brew --prefix)/sbin'":'"$PATH"' >>/home/linuxbrew/.bash_profile
-
-echo "export PATH='$(brew --prefix)/bin:$(brew --prefix)/sbin'":'"$PATH"' >>/home/linuxbrew/.profile
+### get [linuxbrew](http://linuxbrew.sh/)
 
 ### If you want to pull a private docker image:
 docker login 
