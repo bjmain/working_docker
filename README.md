@@ -1,7 +1,8 @@
-# working with docker
+###############################################################################
+# Working with docker
+###############################################################################
 
-docker image ls # all pulled containers
-docker ps # all running containers with ids
+[cheatsheet](https://github.com/wsargent/docker-cheat-sheet)
   
 ### You _can_ copy files from host to container:
 docker cp knwr_F_spades.fa.gz 30face09e8f8:/home/linuxbrew/tigmint/spades
