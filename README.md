@@ -25,6 +25,8 @@ docker pull bjmain/arcs:firsttry
 ### To run both [Tigmint](https://hub.docker.com/r/bcgsc/tigmint/) and scaffold the corrected assembly with ARCS : 
 /home/linuxbrew/tigmint/bin/tigmint-make arcs draft=knwr_F_spades reads=barcoded  #you need to be in the same directory as reads
 
+## Note: If the stop an AWS instance, screens are terminated with its running docker container
+
 ### copy files to and from aws
 scp -i .pem knwr_F_spades.fa.gz ubuntu@XXXXamazonaws.com:~
 scp -i .pem ubuntu@XXXXamazonaws.com:~ knwr_F_spades.fa.gz 
