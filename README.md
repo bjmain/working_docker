@@ -31,8 +31,6 @@ bjmain
 @
 docker pull bjmain/arcs:firsttry
 
-http://github.com - automatic!
-[GitHub](http://github.com)
 
 https://hub.docker.com/r/bcgsc/tigmint/ -automatic!
 ### To run both [Tigmint](https://hub.docker.com/r/bcgsc/tigmint/) and scaffold the corrected assembly with ARCS : 
