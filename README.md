@@ -3,15 +3,14 @@
 docker image ls # all pulled containers
 docker ps # all running containers with ids
   
-### You can copy files from host to container, but its much better to mount a host folder to /mnt on startup:
+### You _can_ copy files from host to container:
 docker cp knwr_F_spades.fa.gz 30face09e8f8:/home/linuxbrew/tigmint/spades
-
-### Mount host folder to /mnt on docker image startup:
+### but probably always preferable to just mount your host folder to /mnt with -v:
 docker run -it -v /home/ubuntu/reads:/mnt bjmain/arcs:firsttry
 
 ### To update tools inside an instance or image:
 sudo apt-get update
-#install vi
+#### install vi
 sudo apt-get install vim
 
 ### get [linuxbrew](http://linuxbrew.sh/)
