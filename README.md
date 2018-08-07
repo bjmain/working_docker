@@ -1,6 +1,7 @@
-# working_docker
+# working with docker
 
-From host server: docker ps    # gives you container ids
+docker image ls # all pulled containers
+docker ps # all running containers with ids
   
 ### You can copy files from host to container, but its much better to mount a host folder to /mnt on startup:
 docker cp knwr_F_spades.fa.gz 30face09e8f8:/home/linuxbrew/tigmint/spades
