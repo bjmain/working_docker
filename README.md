@@ -28,3 +28,13 @@ docker images
 docker tag 632ce8e46b32 bjmain/arcs:firsttry
 
 docker pull bjmain/arcs:firsttry
+
+docker run -it -v /home/ubuntu/reads:/mnt bjmain/arcs:firsttry
+
+https://hub.docker.com/r/bcgsc/tigmint/
+#To run both Tigmint and scaffold the corrected assembly with ARCS: 
+/home/linuxbrew/tigmint/bin/tigmint-make arcs draft=knwr_F_spades reads=barcoded  #you need to be in the same directory as reads
+
+# copy files to aws
+scp -i .pem knwr_F_spades.fa.gz ubuntu@XXXXamazonaws.com:~
+scp -i .pem ubuntu@XXXXamazonaws.com:~ knwr_F_spades.fa.gz 
