@@ -42,6 +42,16 @@ docker pull bjmain/arcs:firsttry  # insert sudo if non-root
 ### To run both [Tigmint](https://hub.docker.com/r/bcgsc/tigmint/) and scaffold the corrected assembly with ARCS : 
 /home/linuxbrew/tigmint/bin/tigmint-make arcs draft=knwr_F_spades reads=barcoded  #you need to be in the same directory as reads
 
+
+### C++ compiler install
+sudo apt-get install build-essential
+### boost install
+cd /home/ubuntu/bin/arcs
+        wget https://sourceforge.net/projects/boost/files/boost/1.58.0/boost_1_58_0.tar.gz
+        tar -zxvf boost_1_58_0.tar.gz
+        cd boost
+        ./bootstrap.sh 
+        ./b2 install
 ## Note: If the stop an AWS instance, screens are terminated with its running docker container
 
 ### copy files to and from aws
