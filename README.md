@@ -54,7 +54,9 @@ cd /home/ubuntu/bin/arcs
         ./b2 install
 ### Configure arcs        
 ./configure --with-boost=/home/ubuntu/bin/arcs/boost_1_58_0/
+
 sudo apt-get install libz-dev
+
 sudo make install
 
 ## Note: If the stop an AWS instance, screens are terminated with its running docker container
