@@ -23,6 +23,10 @@ docker run -it -v /home/ubuntu/reads:/mnt bjmain/arcs:firsttry
 
 ### To update tools inside an instance or image:
 sudo apt-get update
+### install automake & aclocal for installing arcs (autogen.sh)
+sudo apt-get install autotools-dev
+sudo apt-get install automake
+
 #### install vi
 sudo apt-get install vim
 
