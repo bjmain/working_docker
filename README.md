@@ -67,8 +67,17 @@ sudo make install
 ### run arcs + tigmint:
 /home/ubuntu/bin/arcs/Examples/arcs-make arcs-tigmint draft=scaffolds_5k reads=barcoded
 
+/home/ubuntu/bin/arcs/Examples/pipeline_example.sh scaffolds_5k barcoded
+
 ## Note: If the stop an AWS instance, screens are terminated with its running docker container
 
 ### copy files to and from aws
 scp -i .pem knwr_F_spades.fa.gz ubuntu@XXXXamazonaws.com:~
 scp -i .pem ubuntu@XXXXamazonaws.com:~ knwr_F_spades.fa.gz 
+
+### Initially the pipeline was breaking because of an old version of samtools!
+### update samtools on aws
+Read the ubuntu section of the INSTALL file and it gives a list of all dependencies and how to install
+$ sudo apt remove samtools
+$ sudo ln -s /usr/local/bin/bin/samtools /usr/bin/samtools
+
