@@ -56,6 +56,11 @@ cd /home/ubuntu/bin/arcs
 ./configure --with-boost=/home/ubuntu/bin/arcs/boost_1_58_0/
 
 sudo apt-get install libz-dev
+git clone https://github.com/bcgsc/LINKS.git
+
+### add dependencies to path (.bashrc + source):
+export PATH=$PATH:/home/bradmain/gambiae/malphigs/Acol/BitSeq/
+
 
 sudo make install
 
