@@ -59,6 +59,9 @@ sudo apt-get install libz-dev
 
 sudo make install
 
+### run arcs + tigmint:
+/home/ubuntu/bin/arcs/Examples/arcs-make arcs-tigmint draft=scaffolds_5k reads=barcoded
+
 ## Note: If the stop an AWS instance, screens are terminated with its running docker container
 
 ### copy files to and from aws
